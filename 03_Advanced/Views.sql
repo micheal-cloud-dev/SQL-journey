@@ -17,6 +17,8 @@ values( "gokul" , "10th" , 2500),
       ( "mugesh" , "12th",1000);
 
 -- View --> duplicate table
+-- -->it's automatically updated, when original table updated;
+
 create view details as
 select s_name, class from class;
 
@@ -36,4 +38,3 @@ select * from class
 order by fees;
 
 select * from class;
-
