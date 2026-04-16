@@ -15,8 +15,10 @@ values( "abishek" , 20000 , "2025-10-21" ),
 
 -- group by  --> it filter the column;
 select sum(amount),p_date from patients
-group by p_date
-having sum(amount) > 3000;
+group by p_date with rollup;
+
+-- with rollup is used for give the final output
+
 
 /*in GROUP BY we not use where condition,
  instead of that we use HAVING*/
@@ -25,4 +27,4 @@ having sum(amount) > 3000;
 
 select count(amount),e_name from patients
 group by e_name
-having count(amount) = 2;
+having count(amount) = 2; 
