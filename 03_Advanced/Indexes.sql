@@ -1,3 +1,5 @@
+-- easy to search the element
+
 create database school;
 use school;
 create table class
